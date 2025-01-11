@@ -1,7 +1,7 @@
 # Banking System
 
 ## Overview
-This is a Java-based console application that simulates a basic banking system. It allows users to manage accounts, perform transactions, and handle user registrations using a MySQL database. The system is structured to ensure modularity and maintainability through a combination of Java JDBC and a well-organized backend.
+This is a Java-based console application that simulates a basic banking system. It allows users to manage accounts, perform transactions, and handle user registrations using a MySQL database. The system is structured to ensure modularity and maintainability through a combination of JDBC and core JAVA OOPS concepts.
 
 
 ## Collaborators
