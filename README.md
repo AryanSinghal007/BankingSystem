@@ -1,5 +1,6 @@
 # Banking System
 
+![diagram-export-14-01-2025-17_52_09](https://github.com/user-attachments/assets/606ef75a-6df3-4a89-a357-23957bc7d80e)
 ## Overview
 This is a Java-based console application that simulates a basic banking system. It allows users to manage accounts, perform transactions, and handle user registrations using a MySQL database. The system is structured to ensure modularity and maintainability through a combination of JDBC and core JAVA OOPS concepts.
 
