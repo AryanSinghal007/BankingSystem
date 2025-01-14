@@ -51,11 +51,21 @@ This is a Java-based console application that simulates a basic banking system. 
 6. Compile the Java files using the following command:
    ```bash
    javac App.java
+   ```
+   or (if Paths not setup)
+
+   ```bash
+   javac -cp "lib/:." -d bin src/.java
    
 7. Run the program
 
    ```bash
    java App
+   ```
+   or (if Paths not setup)
+
+   ```bash
+   java -cp "bin:lib/*" App
 
 ## Future Enhancements
 
