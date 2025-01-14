@@ -17,20 +17,20 @@ public class User {
     // register new user
     public void register(){
         System.out.printf("Enter your name: ");
-        String name = scanner.nextLine();
+        String name = scanner.next();
 
         System.out.printf("Enter your email: ");
-        String email = scanner.nextLine();
+        String email = scanner.next();
 
-        System.out.printf("Enter your password: ");
-        String password = scanner.nextLine();
+        System.out.printf("Generate password: ");
+        String password = scanner.next();
 
 
         if(user_exists(email)){
             System.out.println("User already exists");
         }else{
             // insert user into database
-            String query = "INSERT INTO user(full_name, email, password) VALUES(? ? ?)";
+            String query = "INSERT INTO user(full_name, email, password) VALUES(?, ?, ?)";
 
             try{
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
@@ -48,7 +48,7 @@ public class User {
 
             }catch(SQLException e){
                 e.printStackTrace();
-                System.out.println("User registration failed!" + e.getMessage());
+                System.out.println(e.getMessage());
             }
         }
     }
@@ -56,10 +56,10 @@ public class User {
     // login user
     public String login(){
         System.out.printf("Enter your email: ");
-        String email = scanner.nextLine();
+        String email = scanner.next();
 
         System.out.printf("Enter your password: ");
-        String password = scanner.nextLine();
+        String password = scanner.next();
 
         if(user_exists(email)){
             // check password
