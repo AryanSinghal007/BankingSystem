@@ -7,9 +7,9 @@ public class BankingSystem {
         startApp();
     }
 
-    private static final String URL = "jdbc:mysql://localhost:3306/banking_system";
-    private static final String username = "root";
-    private static final String password = "mysql12345";
+    private static final String URL = "jdbc:mysql://localhost:3306/{SQL_DB}";
+    private static final String username = {SQL.username};
+    private static final String password = {SQL.passwrod};
 
     public void startApp(){
 
